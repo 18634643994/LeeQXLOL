@@ -8,7 +8,7 @@
 
 #import "AppDelegate+Category.h"
 #import <AFNetworkActivityIndicatorManager.h>
-
+#import "MobClick.h"
 @implementation AppDelegate (Category)
 
 - (void)initializeWithApplication:(UIApplication *)application{
@@ -34,6 +34,11 @@
         }
     }];
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    //启动友盟统计功能,用你自己的友盟AppKey，这样你可以在友盟统计上看到数据
+    [MobClick startWithAppkey:@"5632e65ae0f55a556a0013d9"];
+    //    友盟统计 默认情况下会关掉xcode默认的crash提示
+    [MobClick setLogEnabled:YES];
+
 }
 
 
