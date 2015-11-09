@@ -10,5 +10,5 @@
 
 @interface InformationNetManager : BaseNetManager
 /** Num 切换  Page 第几个页面*/
-+(id)getInfoWithNum:(NSInteger)num Page:(NSInteger)page kCompletionHandle;;
++(id)getInfoWithNum:(NSString*)num Page:(NSInteger)page kCompletionHandle;;
 @end

@@ -10,9 +10,9 @@
 #import "InfomationModel.h"
 @implementation InformationNetManager
 
-+ (id)getInfoWithNum:(NSInteger)num Page:(NSInteger)page kCompletionHandle;
++ (id)getInfoWithNum:(NSString *)num Page:(NSInteger)page kCompletionHandle;
 {
-    NSString *path = [NSString stringWithFormat:@"http://qt.qq.com/static/pages/news/phone/c%ld_list_%ld.shtml",num,page];
+    NSString *path = [NSString stringWithFormat:@"http://qt.qq.com/static/pages/news/phone/c%@_list_%ld.shtml",num,page];
     return [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
         completionHandle([InfomationModel objectWithKeyValues:responseObj], error);
     }];
