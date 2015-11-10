@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self initializeWithApplication:application];
-  [InformationNetManager getInfoWithNum:@"73" Page:1 completionHandle:^(id model, NSError *error) {
+  [InformationNetManager getGunCompletionHandle:^(id model, NSError *error) {
       NSLog(@"aaa");
   }];
     return YES;
