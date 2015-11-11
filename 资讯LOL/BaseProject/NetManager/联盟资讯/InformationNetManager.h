@@ -7,6 +7,7 @@
 //
 
 #import "BaseNetManager.h"
+#import "InfomationModel.h"
 typedef NS_ENUM(NSUInteger, InfoType) {
     InfoTypeZuiXin,
     InfoTypeSaiShi,

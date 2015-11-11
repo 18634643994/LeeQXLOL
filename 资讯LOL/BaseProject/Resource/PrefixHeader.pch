@@ -87,6 +87,7 @@ static const int ddLogLevel = DDLogLevelError;
 
 #import <MWPhotoBrowser.h>      //图片浏览器
 
+#import "Factory.h" //自定义返回按钮
 #endif /* PrefixHeader_pch */
 
 

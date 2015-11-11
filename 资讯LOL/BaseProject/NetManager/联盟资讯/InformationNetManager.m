@@ -7,7 +7,7 @@
 //
 
 #import "InformationNetManager.h"
-#import "InfomationModel.h"
+
 @implementation InformationNetManager
 
 +(id)getInfoWithInfoType:(InfoType)type Page:(NSInteger)page completionHandle:(void (^)(id, NSError *))completionHandle
