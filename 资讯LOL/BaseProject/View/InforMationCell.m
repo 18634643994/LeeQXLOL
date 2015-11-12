@@ -27,9 +27,9 @@
 - (UILabel *)descLb {
     if(_descLb == nil) {
         _descLb = [[UILabel alloc] init];
-        _descLb.font = [UIFont systemFontOfSize:16];
+        _descLb.font = [UIFont systemFontOfSize:14];
         _descLb.textColor = [UIColor lightGrayColor];
-        _descLb.numberOfLines = 0;
+        _descLb.numberOfLines = 2;
     }
     return _descLb;
 }
@@ -59,20 +59,22 @@
         }];
 //        左8 右 15 上对齐
         [self.titleLb mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.topMargin.mas_equalTo(self.iconView);
             make.left.mas_equalTo(self.iconView.mas_right).mas_equalTo(8);
             make.right.mas_equalTo(-15);
-            make.topMargin.mas_equalTo(self.iconView.mas_topMargin).mas_equalTo(0);
+            
         }];
 //    竖向居中
         [self.descLb mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.leftMargin.mas_equalTo(self.titleLb.mas_leftMargin).equalTo(0);
+            make.leftMargin.mas_equalTo(self.titleLb);
             make.right.mas_equalTo(-15);
-            make.centerY.mas_equalTo(0);
+            make.top.mas_equalTo(self.titleLb.mas_bottom).mas_equalTo(3);
+           
         }];
         [self.timeLb mas_makeConstraints:^(MASConstraintMaker *make) {
             make.right.mas_equalTo(-10);
             make.width.mas_equalTo(40);
-            make.bottomMargin.mas_equalTo(self.iconView.mas_bottomMargin).mas_equalTo(0);
+            make.bottomMargin.mas_equalTo(self.iconView);
         }];
         
         

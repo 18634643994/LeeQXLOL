@@ -31,16 +31,13 @@
 }
 
 - (void)getMoreDataCompletionHandle:(CompletionHandle)completionHandle
-{    //如果当前页数已经是最大页数，那么没有必要再发送获取更多请求了，这个样会浪费用户流量
-    if (_maxPage <= _page) {
-        //        [self showErrorMsg:@"没有更多数据"];
-        NSError *err = [NSError errorWithDomain:@"" code:999 userInfo:@{NSLocalizedDescriptionKey:@"没有更多数据了"}];
-        
-        completionHandle(err);
-        return;
-    }
+{       if (self.isHasMore) {
     _page += 1;
     [self getDataFromNetCompleteHandle:completionHandle];
+}else{
+    NSError *error = [NSError errorWithDomain:@"" code:999 userInfo:@{NSLocalizedDescriptionKey:@"没有更多数据"}];
+    completionHandle(error);
+}
 }
 - (void)getDataFromNetCompleteHandle:(CompletionHandle)completionHandle
 {
@@ -49,9 +46,17 @@
             [self.dataArr removeAllObjects];
         }
         [self.dataArr addObjectsFromArray:model.list];
-        _maxPage = model.thisPageNum.integerValue;
+//        _maxPage = model.thisPageNum.integerValue;
         completionHandle(error);
     }];
+}
+- (NSInteger)maxPage
+{
+    return 4;
+}
+- (BOOL)isHasMore
+{
+    return self.maxPage > _page;
 }
 - (NSInteger)rowNumber
 {
@@ -78,5 +83,12 @@
 {
   
     return [self modelForRow:row].publicationDate;
+}
+/** 返回列表的名字*/
+- (NSString *)nameForRowInList:(NSInteger)row
+{
+    
+    return [self modelForRow:row].channelDesc;
+    
 }
 @end

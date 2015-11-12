@@ -10,6 +10,7 @@
 #import "AppDelegate+Category.h"
 #import "LeftViewController.h"
 #import "InformationViewController.h"
+#import "InformationNetManager.h"
 @interface AppDelegate ()
 
 @end
@@ -19,6 +20,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self initializeWithApplication:application];
+    [InformationNetManager getGunCompletionHandle:^(id model, NSError *error) {
+        NSLog(@"aaa");
+    }];
     self.window.rootViewController = self.sideMenu;
     [self configGlobalUIStyle]; //配置全局UI样式
     return YES;

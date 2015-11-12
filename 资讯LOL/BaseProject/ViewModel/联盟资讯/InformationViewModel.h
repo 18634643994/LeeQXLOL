@@ -24,13 +24,15 @@
 - (NSString *)dataForRowInList:(NSInteger)row;
 /** 返回列表中某行的图片*/
 - (NSURL *)iconURLForRowInList:(NSInteger)row;
-
+/** 返回列表的名字*/
+- (NSString *)nameForRowInList:(NSInteger)row;
 //当前的页数
 @property(nonatomic)NSInteger page;
 //当前最大页数
 @property(nonatomic)NSInteger maxPage;
 
-
+//是否有更多页面
+@property(nonatomic, getter=isHasMore) BOOL hasMore;
 
 
 

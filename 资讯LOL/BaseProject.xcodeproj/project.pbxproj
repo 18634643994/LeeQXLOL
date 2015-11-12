@@ -73,6 +73,7 @@
 		85D644EA1BF1AF6C009D24C5 /* InformationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D644E91BF1AF6C009D24C5 /* InformationViewModel.m */; };
 		85D644ED1BF1BEE0009D24C5 /* InforMationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D644EC1BF1BEE0009D24C5 /* InforMationCell.m */; };
 		85D644F01BF1BF3C009D24C5 /* TRImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D644EF1BF1BF3C009D24C5 /* TRImageView.m */; };
+		85D669701BF42C8800FBF105 /* GunDongViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D6696F1BF42C8800FBF105 /* GunDongViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -186,6 +187,8 @@
 		85D644EC1BF1BEE0009D24C5 /* InforMationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InforMationCell.m; sourceTree = "<group>"; };
 		85D644EE1BF1BF3C009D24C5 /* TRImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRImageView.h; sourceTree = "<group>"; };
 		85D644EF1BF1BF3C009D24C5 /* TRImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRImageView.m; sourceTree = "<group>"; };
+		85D6696E1BF42C8800FBF105 /* GunDongViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GunDongViewModel.h; sourceTree = "<group>"; };
+		85D6696F1BF42C8800FBF105 /* GunDongViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GunDongViewModel.m; sourceTree = "<group>"; };
 		DD4F0750B5DAAA87BA236B31 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -541,6 +544,8 @@
 			children = (
 				85D644E81BF1AF6C009D24C5 /* InformationViewModel.h */,
 				85D644E91BF1AF6C009D24C5 /* InformationViewModel.m */,
+				85D6696E1BF42C8800FBF105 /* GunDongViewModel.h */,
+				85D6696F1BF42C8800FBF105 /* GunDongViewModel.m */,
 			);
 			path = "联盟资讯";
 			sourceTree = "<group>";
@@ -605,6 +610,7 @@
 				TargetAttributes = {
 					3886C0921BD748830014E661 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 7UUDPL578E;
 					};
 				};
 			};
@@ -730,6 +736,7 @@
 				3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */,
 				3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */,
 				850C3FC21BF0BB0500AFDEAF /* InformationNetManager.m in Sources */,
+				85D669701BF42C8800FBF105 /* GunDongViewModel.m in Sources */,
 				3885C8FB1BE8E96A009441EA /* README.md in Sources */,
 				859F9F6C1BF21C670062922D /* Factory.m in Sources */,
 				85D644ED1BF1BEE0009D24C5 /* InforMationCell.m in Sources */,
@@ -853,6 +860,8 @@
 			baseConfigurationReference = 4329DABFE5AD654FE71597C9 /* Pods-BaseProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
@@ -868,8 +877,9 @@
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tarena.BaseProject;
+				PRODUCT_BUNDLE_IDENTIFIER = adsfdSF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -878,6 +888,8 @@
 			baseConfigurationReference = DD4F0750B5DAAA87BA236B31 /* Pods-BaseProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
@@ -893,8 +905,9 @@
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/BaseProject/Vendor/umeng_ios_social_sdk_4.2-2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tarena.BaseProject;
+				PRODUCT_BUNDLE_IDENTIFIER = adsfdSF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
