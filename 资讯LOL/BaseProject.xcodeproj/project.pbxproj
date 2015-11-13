@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00EB442A1BF4C8F6002B7375 /* MediaListNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EB44291BF4C8F6002B7375 /* MediaListNetManager.m */; };
+		00EB442D1BF4C99C002B7375 /* MediaListDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EB442C1BF4C99C002B7375 /* MediaListDetailModel.m */; };
+		00EB44301BF4D3E7002B7375 /* MediaListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EB442F1BF4D3E7002B7375 /* MediaListCell.m */; };
+		00EB44361BF4D790002B7375 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EB44351BF4D790002B7375 /* MediaViewController.m */; };
+		00EB44391BF4D9F9002B7375 /* MediaViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EB44381BF4D9F9002B7375 /* MediaViewModel.m */; };
+		00EB443D1BF4E921002B7375 /* MediaDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EB443C1BF4E921002B7375 /* MediaDetailViewModel.m */; };
+		00EB44401BF4F5E7002B7375 /* MediaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EB443F1BF4F5E7002B7375 /* MediaDetailViewController.m */; };
+		00EB44421BF50A04002B7375 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EB44411BF50A04002B7375 /* AVKit.framework */; };
+		00EB44441BF50A09002B7375 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EB44431BF50A09002B7375 /* AVFoundation.framework */; };
+		00FFAF171BF4C0D500BF67DA /* MediaListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FFAF161BF4C0D500BF67DA /* MediaListModel.m */; };
 		1FACF87C97D68F953ECE365C /* libPods-BaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAAD623A23724C816F8DC02 /* libPods-BaseProject.a */; };
 		3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804CE4A1BD758F10046C8C8 /* AppDelegate+Category.m */; };
 		3804CE521BD758F10046C8C8 /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804CE4C1BD758F10046C8C8 /* NSObject+Common.m */; };
@@ -67,6 +77,7 @@
 		850C3FBE1BF0B58F00AFDEAF /* InfomationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 850C3FBD1BF0B58F00AFDEAF /* InfomationModel.m */; };
 		850C3FC21BF0BB0500AFDEAF /* InformationNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 850C3FC11BF0BB0500AFDEAF /* InformationNetManager.m */; };
 		8532FF591BF36BD300D624F4 /* InfoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8532FF581BF36BD300D624F4 /* InfoListTableViewController.m */; };
+		853BA3981BF49B24004BBAF0 /* MediaListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 853BA3971BF49B24004BBAF0 /* MediaListViewController.m */; };
 		859F9F661BF218A60062922D /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859F9F651BF218A60062922D /* LeftViewController.m */; };
 		859F9F691BF218BE0062922D /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859F9F681BF218BE0062922D /* InformationViewController.m */; };
 		859F9F6C1BF21C670062922D /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 859F9F6B1BF21C670062922D /* Factory.m */; };
@@ -77,6 +88,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00EB44281BF4C8F6002B7375 /* MediaListNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaListNetManager.h; sourceTree = "<group>"; };
+		00EB44291BF4C8F6002B7375 /* MediaListNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaListNetManager.m; sourceTree = "<group>"; };
+		00EB442B1BF4C99C002B7375 /* MediaListDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaListDetailModel.h; sourceTree = "<group>"; };
+		00EB442C1BF4C99C002B7375 /* MediaListDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaListDetailModel.m; sourceTree = "<group>"; };
+		00EB442E1BF4D3E7002B7375 /* MediaListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaListCell.h; sourceTree = "<group>"; };
+		00EB442F1BF4D3E7002B7375 /* MediaListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaListCell.m; sourceTree = "<group>"; };
+		00EB44341BF4D790002B7375 /* MediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
+		00EB44351BF4D790002B7375 /* MediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
+		00EB44371BF4D9F9002B7375 /* MediaViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaViewModel.h; sourceTree = "<group>"; };
+		00EB44381BF4D9F9002B7375 /* MediaViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaViewModel.m; sourceTree = "<group>"; };
+		00EB443B1BF4E921002B7375 /* MediaDetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaDetailViewModel.h; sourceTree = "<group>"; };
+		00EB443C1BF4E921002B7375 /* MediaDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaDetailViewModel.m; sourceTree = "<group>"; };
+		00EB443E1BF4F5E7002B7375 /* MediaDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaDetailViewController.h; sourceTree = "<group>"; };
+		00EB443F1BF4F5E7002B7375 /* MediaDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaDetailViewController.m; sourceTree = "<group>"; };
+		00EB44411BF50A04002B7375 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		00EB44431BF50A09002B7375 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		00FFAF151BF4C0D500BF67DA /* MediaListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaListModel.h; sourceTree = "<group>"; };
+		00FFAF161BF4C0D500BF67DA /* MediaListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaListModel.m; sourceTree = "<group>"; };
 		3804CE491BD758F10046C8C8 /* AppDelegate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Category.h"; sourceTree = "<group>"; };
 		3804CE4A1BD758F10046C8C8 /* AppDelegate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Category.m"; sourceTree = "<group>"; };
 		3804CE4B1BD758F10046C8C8 /* NSObject+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Common.h"; sourceTree = "<group>"; };
@@ -175,6 +204,8 @@
 		850C3FC11BF0BB0500AFDEAF /* InformationNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationNetManager.m; sourceTree = "<group>"; };
 		8532FF571BF36BD300D624F4 /* InfoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoListTableViewController.h; sourceTree = "<group>"; };
 		8532FF581BF36BD300D624F4 /* InfoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoListTableViewController.m; sourceTree = "<group>"; };
+		853BA3961BF49B24004BBAF0 /* MediaListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaListViewController.h; sourceTree = "<group>"; };
+		853BA3971BF49B24004BBAF0 /* MediaListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaListViewController.m; sourceTree = "<group>"; };
 		859F9F641BF218A60062922D /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		859F9F651BF218A60062922D /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		859F9F671BF218BE0062922D /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationViewController.h; sourceTree = "<group>"; };
@@ -197,6 +228,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00EB44441BF50A09002B7375 /* AVFoundation.framework in Frameworks */,
+				00EB44421BF50A04002B7375 /* AVKit.framework in Frameworks */,
 				3885C90B1BE8EA70009441EA /* libz.tbd in Frameworks */,
 				3885C9091BE8EA6A009441EA /* libstdc++.tbd in Frameworks */,
 				3885C9071BE8EA62009441EA /* CoreTelephony.framework in Frameworks */,
@@ -219,6 +252,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00EB443A1BF4D9FE002B7375 /* 视频 */ = {
+			isa = PBXGroup;
+			children = (
+				00EB44371BF4D9F9002B7375 /* MediaViewModel.h */,
+				00EB44381BF4D9F9002B7375 /* MediaViewModel.m */,
+				00EB443B1BF4E921002B7375 /* MediaDetailViewModel.h */,
+				00EB443C1BF4E921002B7375 /* MediaDetailViewModel.m */,
+			);
+			name = "视频";
+			sourceTree = "<group>";
+		};
+		00F02AC91BF4C80E00DFCEE2 /* 视频 */ = {
+			isa = PBXGroup;
+			children = (
+				00EB44281BF4C8F6002B7375 /* MediaListNetManager.h */,
+				00EB44291BF4C8F6002B7375 /* MediaListNetManager.m */,
+			);
+			name = "视频";
+			sourceTree = "<group>";
+		};
+		00FFAF141BF4C0B400BF67DA /* 视频 */ = {
+			isa = PBXGroup;
+			children = (
+				00FFAF151BF4C0D500BF67DA /* MediaListModel.h */,
+				00FFAF161BF4C0D500BF67DA /* MediaListModel.m */,
+				00EB442B1BF4C99C002B7375 /* MediaListDetailModel.h */,
+				00EB442C1BF4C99C002B7375 /* MediaListDetailModel.m */,
+			);
+			name = "视频";
+			sourceTree = "<group>";
+		};
 		3804CE481BD758F10046C8C8 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -430,6 +494,7 @@
 		3886C0B01BD74A4A0014E661 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				00FFAF141BF4C0B400BF67DA /* 视频 */,
 				850C3FBB1BF0B50C00AFDEAF /* 联盟资讯 */,
 				3886C0BF1BD74B090014E661 /* BaseModel.h */,
 				3886C0C01BD74B090014E661 /* BaseModel.m */,
@@ -440,6 +505,7 @@
 		3886C0B11BD74A4A0014E661 /* NetManager */ = {
 			isa = PBXGroup;
 			children = (
+				00F02AC91BF4C80E00DFCEE2 /* 视频 */,
 				850C3FBF1BF0BA5100AFDEAF /* 联盟资讯 */,
 				3886C0BC1BD74AFE0014E661 /* BaseNetManager.h */,
 				3886C0BD1BD74AFE0014E661 /* BaseNetManager.m */,
@@ -486,6 +552,8 @@
 				85D644EF1BF1BF3C009D24C5 /* TRImageView.m */,
 				85D644EB1BF1BEE0009D24C5 /* InforMationCell.h */,
 				85D644EC1BF1BEE0009D24C5 /* InforMationCell.m */,
+				00EB442E1BF4D3E7002B7375 /* MediaListCell.h */,
+				00EB442F1BF4D3E7002B7375 /* MediaListCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -493,6 +561,7 @@
 		3886C0B61BD74A4A0014E661 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				853BA3951BF49AA1004BBAF0 /* 视频 */,
 				859F9F631BF218170062922D /* 联盟资讯 */,
 				859F9F641BF218A60062922D /* LeftViewController.h */,
 				859F9F651BF218A60062922D /* LeftViewController.m */,
@@ -503,6 +572,7 @@
 		3886C0B71BD74A4A0014E661 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				00EB443A1BF4D9FE002B7375 /* 视频 */,
 				85D644E71BF1ADFD009D24C5 /* 联盟资讯 */,
 				3886C0B91BD74AE90014E661 /* BaseViewModel.h */,
 				3886C0BA1BD74AE90014E661 /* BaseViewModel.m */,
@@ -526,6 +596,19 @@
 				850C3FC11BF0BB0500AFDEAF /* InformationNetManager.m */,
 			);
 			path = "联盟资讯";
+			sourceTree = "<group>";
+		};
+		853BA3951BF49AA1004BBAF0 /* 视频 */ = {
+			isa = PBXGroup;
+			children = (
+				853BA3961BF49B24004BBAF0 /* MediaListViewController.h */,
+				853BA3971BF49B24004BBAF0 /* MediaListViewController.m */,
+				00EB44341BF4D790002B7375 /* MediaViewController.h */,
+				00EB44351BF4D790002B7375 /* MediaViewController.m */,
+				00EB443E1BF4F5E7002B7375 /* MediaDetailViewController.h */,
+				00EB443F1BF4F5E7002B7375 /* MediaDetailViewController.m */,
+			);
+			name = "视频";
 			sourceTree = "<group>";
 		};
 		859F9F631BF218170062922D /* 联盟资讯 */ = {
@@ -562,6 +645,8 @@
 		FA3445AEA3874C1D4FE61EAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00EB44431BF50A09002B7375 /* AVFoundation.framework */,
+				00EB44411BF50A04002B7375 /* AVKit.framework */,
 				3885C90A1BE8EA70009441EA /* libz.tbd */,
 				3885C9081BE8EA6A009441EA /* libstdc++.tbd */,
 				3885C9061BE8EA62009441EA /* CoreTelephony.framework */,
@@ -724,6 +809,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00EB44361BF4D790002B7375 /* MediaViewController.m in Sources */,
 				3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */,
 				3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */,
 				3885C8FA1BE8E96A009441EA /* PSCollectionViewCell.m in Sources */,
@@ -731,19 +817,27 @@
 				3885C8F91BE8E96A009441EA /* PSCollectionView.m in Sources */,
 				3886C09B1BD748830014E661 /* AppDelegate.m in Sources */,
 				85D644F01BF1BF3C009D24C5 /* TRImageView.m in Sources */,
+				00EB44401BF4F5E7002B7375 /* MediaDetailViewController.m in Sources */,
 				3885C8981BE8E88D009441EA /* iCarousel.m in Sources */,
 				859F9F661BF218A60062922D /* LeftViewController.m in Sources */,
+				00FFAF171BF4C0D500BF67DA /* MediaListModel.m in Sources */,
+				00EB44301BF4D3E7002B7375 /* MediaListCell.m in Sources */,
 				3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */,
 				3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */,
 				850C3FC21BF0BB0500AFDEAF /* InformationNetManager.m in Sources */,
 				85D669701BF42C8800FBF105 /* GunDongViewModel.m in Sources */,
 				3885C8FB1BE8E96A009441EA /* README.md in Sources */,
 				859F9F6C1BF21C670062922D /* Factory.m in Sources */,
+				00EB442D1BF4C99C002B7375 /* MediaListDetailModel.m in Sources */,
+				853BA3981BF49B24004BBAF0 /* MediaListViewController.m in Sources */,
 				85D644ED1BF1BEE0009D24C5 /* InforMationCell.m in Sources */,
+				00EB44391BF4D9F9002B7375 /* MediaViewModel.m in Sources */,
 				85D644EA1BF1AF6C009D24C5 /* InformationViewModel.m in Sources */,
 				859F9F691BF218BE0062922D /* InformationViewController.m in Sources */,
+				00EB443D1BF4E921002B7375 /* MediaDetailViewModel.m in Sources */,
 				3886C0C11BD74B090014E661 /* BaseModel.m in Sources */,
 				850C3FBE1BF0B58F00AFDEAF /* InfomationModel.m in Sources */,
+				00EB442A1BF4C8F6002B7375 /* MediaListNetManager.m in Sources */,
 				3886C0981BD748830014E661 /* main.m in Sources */,
 				3804CE521BD758F10046C8C8 /* NSObject+Common.m in Sources */,
 				8532FF591BF36BD300D624F4 /* InfoListTableViewController.m in Sources */,

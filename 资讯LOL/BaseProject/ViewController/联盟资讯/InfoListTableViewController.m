@@ -87,7 +87,7 @@
     _pageControl.hidesForSinglePage = YES;
     //    如果只有一张图，则不可滚动
     _ic.scrollEnabled = self.GunVM.rowNumber != 1;
-    _pageControl.pageIndicatorTintColor = [UIColor blackColor];
+    _pageControl.pageIndicatorTintColor = [UIColor colorWithRed:239/255.0 green:141/255.0 blue:119/255.0 alpha:1.0];
     _pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
     if (self.GunVM.rowNumber > 1) {
         _timer = [NSTimer bk_scheduledTimerWithTimeInterval:3 block:^(NSTimer *timer) {
